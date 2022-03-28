@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { Provider } from 'next-auth/client'
+import { Provider } from 'next-auth/react'
 
 function MyApp({ Component, pageProps }) {
   return (

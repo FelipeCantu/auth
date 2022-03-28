@@ -4,24 +4,24 @@ import Providers from 'next-auth/providers'
 const options = {
     Providers: [
         Providers.GitHub({
-            clientId: '',
-            clientSecret: ''
+            clientId: process.env.GITHUB_ID,
+            clientSecret: process.env.GITHUB_SECRET
         }),
         Providers.Twitter({
-            clientId: '',
-            clientSecret: ''
+            clientId: process.env.TWITTER_ID,
+            clientSecret: process.env.TWITTER_SECRET
         }),
-        Providers.Email({
-            server: {
-                host: '',
-                port: '',
-                auth: {
-                    user: '',
-                    pass: ''
-                }
-            },
-            form: '',
-        })
+        // Providers.Email({
+        //     server: {
+        //         host: '',
+        //         port: '',
+        //         auth: {
+        //             user: '',
+        //             pass: ''
+        //         }
+        //     },
+        //     form: '',
+        // })
         
     ]
 }
